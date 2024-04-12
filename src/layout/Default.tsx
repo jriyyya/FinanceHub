@@ -21,7 +21,7 @@ export default function Default() {
           ref={mainSectionRef}
           className="h-screen overflow-y-hidden flex-1"
         >
-          <Header />
+          {/* <Header /> */}
           <Outlet />
         </section>
         <StatisticsSidebar />

@@ -26,16 +26,6 @@ export default function FiInfo() {
 
           <div className="flex flex-col text-red-500 font-black">
             <figure role="separator" className="flex-1" />
-
-            {/* <p className="pl-2 text-sm">Powered by</p>
-            <div className="flex items-center text-base">
-              <img
-                src="/icons/tron.svg"
-                alt="tron"
-                className="aspect-square w-[2em]"
-              />
-              <p>TRON Network</p>
-            </div> */}
           </div>
         </div>
       </div>

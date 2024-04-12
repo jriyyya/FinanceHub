@@ -1,6 +1,6 @@
 export default function Streaks() {
   return (
-    <div className="mx-24 bg-secondary/10 px-6 py-4 rounded-lg flex-col flex gap-y-2">
+    <div className="mx-24 bg-secondary/5 px-6 py-4 rounded-lg flex-col flex gap-y-2">
       <h1 className="text-xl">Streaks</h1>
       <div className="flex">
         <StreakWeek />

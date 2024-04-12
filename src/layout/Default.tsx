@@ -19,7 +19,7 @@ export default function Default() {
         <SideNav />
         <section
           ref={mainSectionRef}
-          className="h-screen overflow-y-hidden flex-1"
+          className="h-screen overflow-y-scroll flex-1 scrollbar-primary"
         >
           {/* <Header /> */}
           <Outlet />

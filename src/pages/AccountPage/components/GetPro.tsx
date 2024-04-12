@@ -10,8 +10,7 @@ export default function GetPro() {
         </h1>
         <p className="text-sm text-back font-medium">Get a month of free PRO experience!</p>
       </div>
-      <button className="text-primary px-4 rounded-3xl font-bold text-lg bg-back">
-        {" "}
+      <button className="text-primary px-4 rounded-3xl bg-back">
         Start Today
       </button>
     </div>

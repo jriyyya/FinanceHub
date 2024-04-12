@@ -14,10 +14,10 @@
   :root[data-theme="light"] {
     --color-primary: 026 201 255;
     --color-secondary: 238 237 235;
-    --color-foreground: 255 255 255;
+    --color-foreground: 237 243 247;
     --color-background: 255 255 255;
     --color-front: 009 009 011;
-    --color-back: 009 009 011;
+    --color-back: 255 255 255;
     --color-border: 023 025 035;
   }
 

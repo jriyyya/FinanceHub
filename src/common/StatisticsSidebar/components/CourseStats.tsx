@@ -34,7 +34,7 @@ export default function CourseStats() {
               <h1 className="font-semibold text-sm max-w-[12vw] truncate">
                 {course.name}
               </h1>
-              <p className="text-xs">Modules : {course.modules}</p>
+              <p className="text-xs text-front/60">Modules : {course.modules}</p>
             </div>
           </div>
 
@@ -62,33 +62,27 @@ export default function CourseStats() {
 
 const courses = [
   {
-    img: "https://play-lh.googleusercontent.com/DbepofsHLK7fTQmiQi9KurqbL1VvVJEAJ0AOX8CejdsgygCTH_0K4kG9JLmcKl3MkN0K",
-    name: "Asaj Life Sure",
+    img: "https://previews.123rf.com/images/ionutparvu/ionutparvu1612/ionutparvu161202075/67603281-budgeting-stamp-sign-text-word-logo-blue.jpg",
+    name: "Budgeting",
     modules: 12,
     complete: 5,
   },
   {
-    img: "https://m.economictimes.com/thumb/msid-102577743,width-1200,height-900,resizemode-4,imgsize-9920/max-life.jpg",
-    name: "XAM life policies",
+    img: "https://www.shutterstock.com/image-vector/money-logo-design-vector-illustrative-260nw-2005306109.jpg",
+    name: "Saving and Investments",
     modules: 15,
     complete: 5,
   },
   {
-    img: "https://static.vecteezy.com/system/resources/previews/020/335/989/original/sbi-logo-sbi-icon-free-free-vector.jpg",
-    name: "Normie Car Insurnace",
+    img: "https://www.shutterstock.com/image-vector/finance-accounting-logo-design-vector-260nw-1722070894.jpg",
+    name: "Personal finance",
     modules: 30,
     complete: 20,
   },
   {
     img: "https://avatars.githubusercontent.com/u/134763039?s=200&v=4",
-    name: "Agrosurance",
+    name: "Eco-Finance",
     modules: 10,
     complete: 5,
-  },
-  {
-    img: "https://cdn.logojoy.com/wp-content/uploads/2018/07/30125031/insurance8.png",
-    name: "Cocksford Theft Insurnace",
-    modules: 5,
-    complete: 2,
-  },
+  }
 ];

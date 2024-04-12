@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-background text-front font-poppins scroll-smooth;
+  }
+
+  body {
+    @apply m-0 p-0;
+  }
+
+  :root[data-theme="light"] {
+    --color-primary: 026 201 255;
+    --color-secondary: 238 237 235;
+    --color-foreground: 255 255 255;
+    --color-background: 255 255 255;
+    --color-front: 009 009 011;
+    --color-back: 009 009 011;
+    --color-border: 023 025 035;
+  }
+
+  :root[data-theme="dark"] {
+    --color-primary: 026 201 255;
+    --color-secondary: 001 152 234;
+    --color-background: 006 006 006;
+    --color-foreground: 023 025 035;
+    --color-front: 255 255 255;
+    --color-back: 010 010 010;
+    --color-mute: 113 128 150;
+    --color-border: 023 025 035;
+  }
+  
+
+}

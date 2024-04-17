@@ -52,7 +52,7 @@ export default function CommunityPage() {
                 <div className="flex items-center">
                   <Icon
                     icon="chat"
-                    className="text=[1.2rem] mr-1 text-primary"
+                    className="text-[1.2rem] mr-1 text-primary"
                   />
                   {data.commentsCount}
                 </div>

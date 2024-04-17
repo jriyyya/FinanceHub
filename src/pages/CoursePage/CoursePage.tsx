@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import Icon from "../../common/Icon";
+import { Link } from "react-router-dom";
 
 export default function CoursePage() {
   const [showDescription, setShowDescription] = useState(true);
@@ -83,7 +84,7 @@ export default function CoursePage() {
               <div className="flex gap-x-4 items-center">
                 <Icon icon="lesson" className="text-[2rem] font-light" />
                 <div className="flex flex-col gap-y-2">
-                  <span className="text-xs text-front/60">Lesson</span>
+                  <span className="text-xs text-front/60">Module</span>
                   <h1 className="text-xl font-semibold">{module.title}</h1>
                   {module.status == 1 && (
                     <span className="text-xs border border-front/40 bg-front/20 w-max px-2 py-1 rounded-2xl">
@@ -99,9 +100,9 @@ export default function CoursePage() {
                 />
               )}
               {module.status == 1 && (
-                <button className="text-lg font-bold py-2 px-6 border border-primary/60 bg-primary/10 rounded-lg">
+                <Link to="/module" className="text-lg font-bold py-2 px-6 border border-primary/60 bg-primary/10 rounded-lg">
                   Start
-                </button>
+                </Link>
               )}
               {module.status == 0 && (
                 <Icon

@@ -11,6 +11,7 @@ import AccountPage from "./AccountPage/AccountPage";
 import LeaderboardPage from "./LeaderboardPage/LeaderboardPage";
 import CommunityPage from "./CommunityPage/CommunityPage";
 import CoursePage from "./CoursePage/CoursePage";
+import ModulePage from "./ModulePage/ModulePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
         <Route element={<LeaderboardPage />} path="/leaderboard" />
         <Route element={<CommunityPage />} path="/community" />
         <Route element={<CoursePage />} path="/course" />
+        <Route element={<ModulePage />} path="/module" />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </>

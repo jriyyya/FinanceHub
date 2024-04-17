@@ -5,11 +5,11 @@ import Icon, { IconType } from "./Icon";
 export default function Navbar() {
   const navItems: Array<{ title: string; link: string; icon: IconType }> = [
     { title: "Home", link: "/", icon: "home" },
-    { title: "Account", link: "/account", icon: "person" },
     { title: "Leaderboard", link: "/leaderboard", icon: "analytics" },
     { title: "Community", link: "/community", icon: "description" },
     { title: "News", link: "/blog", icon: "grid" },
     { title: "Go Pro", link: "/gopro", icon: "key" },
+    { title: "Account", link: "/account", icon: "person" },
     { title: "Logout", link: "/logout", icon: "logout" },
   ];
 
@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex flex-col gap-y-1">
           <h1 className="font-black text-2xl tracking-wider">FiHub</h1>
           <p className="text-primary text-xs font-semibold">
-          Unlock Financial Wisdom
+            Unlock Financial Wisdom
           </p>
         </div>
       </div>

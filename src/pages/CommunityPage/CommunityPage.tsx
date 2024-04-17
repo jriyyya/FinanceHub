@@ -1,4 +1,4 @@
-import Icon from "../../../common/Icon";
+import Icon from "../../common/Icon";
 
 export default function CommunityPage() {
   return (

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Courses() {
   return (
     <section className="mx-16 bg-secondary/5 p-6 rounded-xl flex flex-col items-center gap-y-6">
@@ -17,7 +19,7 @@ export default function Courses() {
       </div>
       <div className="flex flex-col gap-y-8">
         {courses.map((course, i) => (
-          <div
+          <Link to={"/course"}
             className="flex gap-x-6 bg-front/5 p-4 rounded-xl hover:bg-front/10 cursor-pointer duration-300 ease-in border border-front/20"
             key={i}
           >
@@ -33,7 +35,7 @@ export default function Courses() {
                 Modules : <span className="">{course.modules}</span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

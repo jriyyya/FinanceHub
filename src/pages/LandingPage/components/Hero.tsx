@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Icon from "../../../common/Icon";
 
 export default function Hero() {
@@ -19,14 +20,14 @@ export default function Hero() {
           your journey!
         </p>
         <div className="my-10 ">
-          <button className="relative text-2xl font-semibold flex items-center gap-x-4">
+          <Link to="/home" className="relative text-2xl font-semibold flex items-center gap-x-4">
             Start the module!
             <span
               className="bg-primary/5 border border-primary/30 rounded-full p-3"
             >
               <Icon icon="lesson" className="text-[2.1rem]" /> 
             </span>
-          </button>
+          </Link>
         </div>
         <div className="my-3 flex max-w-[45vw] gap-x-8">
           <div className="flex max-w-[45%] gap-x-5">

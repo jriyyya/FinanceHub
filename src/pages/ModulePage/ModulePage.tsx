@@ -84,7 +84,7 @@ export default function ModulePage() {
       {progress == data.length && (
         <div className="w-full flex flex-col gap-y-8 font-semibold items-center pt-24 h-full overflow-hidden">
           <img
-            src="https://i.pinimg.com/originals/f8/ba/e3/f8bae313dbee24d67d29770508e8cedd.gif"
+            src="/catsDancing.gif"
             className="w-[40%] rounded-xl"
           />
           <div className="flex gap-x-4 items-center">

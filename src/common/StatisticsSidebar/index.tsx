@@ -12,11 +12,11 @@ export default function StatisticsSidebar() {
         </div>
         <div>
           <h2 className="text-xs -mb-1">Ongoing Courses</h2>
-          <p className="font-mono text-primary text-2xl font-medium">15</p>
+          <p className="font-mono text-primary text-2xl font-medium">12</p>
         </div>
         <div>
           <h2 className="text-xs -mb-1">Completed Courses</h2>
-          <p className="font-mono text-primary text-2xl font-medium">1</p>
+          <p className="font-mono text-primary text-2xl font-medium">4</p>
         </div>
       </div>
       <CourseStats />

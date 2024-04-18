@@ -20,13 +20,13 @@ export default function Courses() {
       <div className="flex flex-col gap-y-8">
         {courses.map((course, i) => (
           <Link to={"/course"}
-            className="flex gap-x-6 bg-front/5 p-4 rounded-xl hover:bg-front/10 cursor-pointer duration-300 ease-in border border-front/20"
+            className="flex gap-x-6 5 p-4 rounded-xl hover:bg-front/5 cursor-pointer duration-300 ease-in border border-front/20"
             key={i}
           >
             <img
               src={course.imgUrl}
               alt=""
-              className="w-[7vw] aspect-square h-max rounded-full border border-primary p-1 object-cover"
+              className="w-[6vw] aspect-square h-max rounded-full border border-primary p-1 object-cover"
             />
             <div className="flex flex-col">
               <h1 className="text-lg font-bold">{course.name}</h1>

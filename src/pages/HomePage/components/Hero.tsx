@@ -6,7 +6,7 @@ export default function Hero() {
         <div className="flex w-full scrollbar-primary gap-x-6 justify-center">
           {myCourses.map((course, i) => (
             <div
-              className="shadow-sm shadow-primary bg-primary/5 border border-primary/20 rounded-xl w-[30%] items-center px-4 flex flex-col gap-y-6 py-6 justify-between hover:scale-105 hover:bg-primary/10 duration-300 ease-in cursor-pointer"
+              className="shadow-sm shadow-primary border border-primary/20 rounded-xl w-[30%] items-center px-4 flex flex-col gap-y-6 py-6 justify-between hover:scale-105 hover:bg-primary/5 duration-300 ease-in cursor-pointer"
               key={i}
             >
               <div className="flex flex-col items-center gap-y-2">
@@ -36,7 +36,7 @@ const myCourses = [
 
 
   {
-    name: "Persona Finance",
+    name: "PersonaL Finance",
     imgUrl:
       "https://i.pinimg.com/736x/78/2b/2c/782b2c9ce0bd50155e5e54fb2ec3aefb.jpg",
     status: 0,

@@ -50,14 +50,14 @@ export default function CourseStats() {
 
 const courses = [
   {
-    img: "https://previews.123rf.com/images/ionutparvu/ionutparvu1612/ionutparvu161202075/67603281-budgeting-stamp-sign-text-word-logo-blue.jpg",
+    img: "https://c8.alamy.com/comp/2CR2RXM/budgeting-line-color-icon-event-management-sign-for-web-page-mobile-app-button-logo-vector-isolated-element-editable-stroke-2CR2RXM.jpg",
     name: "Complete 5 Budgeting modules",
     modules: "Total Modules: 12",
     complete: "Completed Modules: 4",
     status: 0,
   },
   {
-    img: "https://www.shutterstock.com/image-vector/money-logo-design-vector-illustrative-260nw-2005306109.jpg",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWE2vjJpER257F3OIq6vEY9thq98rCt6Sew&usqp=CAU",
     name: "Complete 2 Investment modules",
     modules: "Total Modules: 15",
     complete: "Completed Modules: 7",

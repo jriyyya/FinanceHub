@@ -12,6 +12,7 @@ import LeaderboardPage from "./LeaderboardPage/LeaderboardPage";
 import CommunityPage from "./CommunityPage/CommunityPage";
 import CoursePage from "./CoursePage/CoursePage";
 import ModulePage from "./ModulePage/ModulePage";
+import FinnyBotPage from "./FinnyBotPage/FinnyBotPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,8 @@ const router = createBrowserRouter(
         <Route element={<CommunityPage />} path="/community" />
         <Route element={<CoursePage />} path="/course" />
         <Route element={<ModulePage />} path="/module" />
+        <Route element={<FinnyBotPage />} path="/finny" />
+        <Route path="*" element={<ErrorPage />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </>

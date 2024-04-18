@@ -14,7 +14,7 @@ export default function ErrorPage() {
           Page Not Found
         </h2>
         <p className="text-center text-sm my-3 text-front text-opacity-70">
-          We were not able to find the page you were looking for
+          We are working on this page
         </p>
         <Link to="/" className="btn-1">
           Back to Homepage

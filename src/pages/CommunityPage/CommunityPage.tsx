@@ -1,6 +1,15 @@
+import { useState } from "react";
 import Icon from "../../common/Icon";
 
 export default function CommunityPage() {
+  const [expanded, setExpanded] = useState(
+    Array(communityData.length).fill(false)
+  );
+  const toggleExpanded = (index: number) => {
+    const newExpanded = [...expanded];
+    newExpanded[index] = !newExpanded[index];
+    setExpanded(newExpanded);
+  };
   return (
     <div className="px-24 py-16">
       <h1 className="text-2xl font-semibold">Community Discussion</h1>
@@ -25,7 +34,7 @@ export default function CommunityPage() {
       <div className="flex flex-col gap-y-6 mt-8">
         {communityData.map((data, i) => (
           <div
-            className="flex flex-col bg-secondary/5 border border-secondary/20 p-4 rounded-xl gap-y-2 hover:bg-secondary/10 cursor-pointer duration-300 ease-in-out"
+            className="flex flex-col bg-secondary/5 border border-secondary/20 p-4 rounded-xl gap-y-2 hover:bg-secondary/10 duration-300 ease-in-out"
             key={i}
           >
             <h1 className="text-xl font-bold font-sans">{data.title}</h1>
@@ -39,7 +48,29 @@ export default function CommunityPage() {
                 </div>
               ))}
             </div>
-            <p className="text-sm mt-2 text-front/90">{data.description.slice(0, 180)}<span className="pl-2 text-xs text-primary">...Read More</span></p>
+            <div>
+              <p className="text-sm mt-2 text-front/90">
+                {expanded[i]
+                  ? data.description
+                  : data.description.slice(0, 180)}
+                {!expanded[i] && (
+                  <button
+                    className="hover:cursor-pointer pl-2 text-xs text-primary"
+                    onClick={() => toggleExpanded(i)}
+                  >
+                    ...Read More
+                  </button>
+                )}
+              </p>
+              {expanded[i] && (
+                <button
+                  className="hover:cursor-pointer text-xs text-primary"
+                  onClick={() => toggleExpanded(i)}
+                >
+                  Read Less
+                </button>
+              )}
+            </div>
             <div className="mt-2 flex justify-between">
               <div className="flex items-center gap-x-4">
                 <div className="flex items-center">
@@ -110,7 +141,7 @@ const communityData = [
     userName: "Bob",
     userImage: "https://randomuser.me/api/portraits/men/40.jpg",
   },
-  
+
   {
     title: "The Rise of Sustainable Investing",
     description:

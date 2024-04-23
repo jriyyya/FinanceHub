@@ -3,7 +3,7 @@ import Icon from "../../../common/Icon";
 
 export default function Hero() {
   return (
-    <section className="px-24 py-28 flex">
+    <section className="px-24 py-24 flex h-screen">
   
       <div className="flex flex-col gap-y-5 py-12">
         <h1 className="text-5xl font-semibold leading-snug">
@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
         <div className="my-10 ">
           <Link to="/home" className="relative text-2xl font-semibold flex items-center gap-x-4">
-            Start the module!
+            Start the Assesment!
             <span
               className="bg-primary/5 border border-primary/30 rounded-full p-3"
             >

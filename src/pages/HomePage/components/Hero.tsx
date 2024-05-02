@@ -13,7 +13,7 @@ export default function Hero() {
                 <img
                   src={course.imgUrl}
                   alt={course.name}
-                  className="w-[5vw] rounded-full border-2 border-primary p-1 aspect-square"
+                  className="w-[5vw] rounded-full border-2 border-primary p-1 aspect-square mobile:w-[15vw]"
                 />
 
                 <h1 className="text-lg text-center">{course.name}</h1>

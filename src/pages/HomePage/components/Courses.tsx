@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Courses() {
   return (
-    <section className="mx-16 bg-secondary/5 p-6 rounded-xl flex flex-col items-center gap-y-6 mobile:mx-8">
+    <section className="mx-16 bg-secondary/5 p-6 rounded-xl flex flex-col items-center gap-y-6 mobile:mx-4">
       <h1 className="text-[1.5rem] font-bold">Explore our courses</h1>
       <div className="flex gap-x-2 mobile:overflow-x-scroll mobile:w-[90%] mobile:scrollbar-primary mobile:pb-2">
         <button className="px-3 rounded-lg py-1 border-primary/20 bg-primary/80 text-back font-semibold border mobile:text-sm mobile:whitespace-nowrap">

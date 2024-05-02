@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 export default function CoursePage() {
   const [showDescription, setShowDescription] = useState(true);
   return (
-    <div className="px-24 py-16">
+    <div className="px-24 py-16 mobile:px-6">
       <div className="flex gap-x-6 bg-opacity-[4%] bg-front p-4 rounded-xl hover:bg-opacity-[6%] cursor-pointer duration-300 ease-in border border-front/20">
         <img
           src="https://i.pinimg.com/736x/78/2b/2c/782b2c9ce0bd50155e5e54fb2ec3aefb.jpg"
           alt=""
           className="w-[7vw] aspect-square h-max rounded-full border border-primary p-1 object-cover"
         />
-        <div className="flex flex-col relative w-full">
+        <div className="flex flex-col relative w-full mobile:gap-y-1">
           <h1 className="text-2xl font-bold">Personal Finance</h1>
           <button onClick={() => setShowDescription(!showDescription)}>
             <Icon
@@ -49,7 +49,7 @@ export default function CoursePage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-y-6 mt-8">
+      <div className="flex flex-col gap-y-6 mt-8 ">
         {modules.map((module, i) => (
           <>
             {i == 2 && (

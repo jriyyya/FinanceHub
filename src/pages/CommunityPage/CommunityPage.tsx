@@ -11,7 +11,7 @@ export default function CommunityPage() {
     setExpanded(newExpanded);
   };
   return (
-    <div className="px-24 py-16">
+    <div className="px-24 py-16 mobile:px-6">
       <h1 className="text-2xl font-semibold">Community Discussion</h1>
       <div className="mt-4 w-full flex gap-x-4">
         <input
@@ -96,7 +96,7 @@ export default function CommunityPage() {
                 <img
                   src={data.userImage}
                   alt={data.userName}
-                  className="w-[2.5vw] rounded-full"
+                  className="w-[2.5vw] rounded-full mobile:w-[8vw]"
                 />
               </div>
             </div>

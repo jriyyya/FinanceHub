@@ -2,12 +2,12 @@ import Icon from "../../common/Icon";
 
 export default function FinnyBotPage() {
   return (
-    <div className="px-24 py-12 flex flex-col justify-between h-full">
+    <div className="px-24 py-12 flex flex-col justify-between h-screen mobile:px-6 mobile:pb-8 mobile:pt-20">
       <div className="flex flex-col gap-y-12">
         <div className="flex gap-x-4">
           <img
             src="https://avatars.githubusercontent.com/u/96080203?v=4"
-            className="w-[3vw] rounded-full aspect-square h-[3vw]"
+            className="w-[3vw] rounded-full aspect-square h-[3vw] mobile:w-[10vw] mobile:h-[10vw]"
           />
           <div className="flex flex-col">
             <h1 className="text-sm font-bold">You</h1>
@@ -18,7 +18,7 @@ export default function FinnyBotPage() {
         <div className="flex gap-x-4 bg-primary/10 p-4 rounded-r-2xl rounded-t-2xl">
           <img
             src="https://t4.ftcdn.net/jpg/01/91/93/03/360_F_191930303_c1u8vl5OypVoK5LfcKIfSc17hjjOxVVP.jpg"
-            className="w-[3vw] rounded-full aspect-square h-[3vw]"
+            className="w-[3vw] rounded-full aspect-square h-[3vw] mobile:w-[10vw] mobile:h-[10vw]"
           />
           <div className="flex flex-col">
             <h1 className="text-sm font-bold">You</h1>

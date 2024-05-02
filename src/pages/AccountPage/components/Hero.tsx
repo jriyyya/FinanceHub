@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-      <div className="flex px-24 pt-12 pb-24 gap-x-8 items-center bg-foreground rounded-b-[8rem]">
+      <div className="flex px-24 pt-12 pb-24 gap-x-8 items-center bg-foreground rounded-b-[8rem] mobile:px-6 mobile:justify-center  mobile:rounded-b-[4rem]">
         <img
           src="https://avatars.githubusercontent.com/u/96080203?v=4"
           alt="profile"
-          className="w-[8vw] rounded-full"
+          className="w-[8vw] rounded-full mobile:w-[16vw]"
         />
         <div className="flex flex-col gap-y-2">
           <div>

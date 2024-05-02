@@ -10,7 +10,7 @@ export default function AccountPage() {
             <Hero />
             <GetPro />
             <Streaks />
-            <div className="mx-24 my-6 flex gap-x-4">
+            <div className="mx-24 my-6 flex gap-x-4 mobile:flex-col mobile:mx-6">
                 <CourseProgress />
                 <Achievements />
             </div>

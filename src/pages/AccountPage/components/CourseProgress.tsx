@@ -14,10 +14,10 @@ export default function CourseProgress() {
               <img
                 src={course.imgUrl}
                 alt={course.name}
-                className="w-[4vw] rounded-full aspect-square"
+                className="w-[4vw] rounded-full aspect-square mobile:w-[10vw]"
               />
               <div className="flex flex-col gap-y-1">
-                <h1 className="font-medium w-[10vw] whitespace-nowrap truncate">{course.name}</h1>
+                <h1 className="font-medium w-[10vw] mobile:w-[30vw] whitespace-nowrap truncate">{course.name}</h1>
                 <p className="text-sm text-front/50">In Progress</p>
               </div>
             </div>

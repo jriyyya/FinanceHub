@@ -1,10 +1,10 @@
 export default function Streaks() {
   return (
-    <div className="mx-24 bg-secondary/5 px-6 py-4 rounded-lg flex-col flex gap-y-2">
-      <h1 className="text-xl">Streaks</h1>
-      <div className="flex">
+    <div className="mx-24 bg-secondary/5 px-6 py-4 rounded-lg flex-col flex gap-y-2 mobile:mx-6 mobile:py-8 mobile:gap-y-4">
+      <h1 className="text-xl ">Streaks</h1>
+      <div className="flex mobile:flex-col mobile:gap-y-8">
         <StreakWeek />
-        <div className="flex flex-col justify-between px-6 basis-1/2">
+        <div className="flex widescreen:flex-col justify-between px-6 basis-1/2">
           <div className="flex flex-col gap-y-2">
             <p className="text-sm text-front/50">Current Streak</p>
             <div className="flex items-center gap-x-2">
@@ -17,7 +17,7 @@ export default function Streaks() {
               <p>2 Days</p>
             </div>
           </div>
-          <div className="w-full bg-front/20 h-[1px]"/>
+          <div className="w-full bg-front/20 h-[1px] mobile:hidden"/>
           <div className="flex flex-col gap-y-2">
             <p className="text-sm text-front/50">Longest Streak</p>
             <div className="flex gap-x-2 items-center">
@@ -38,7 +38,7 @@ export default function Streaks() {
 
 function StreakWeek() {
   return (
-    <div className="basis-1/2 flex flex-wrap gap-x-6 gap-y-4 border-r pr-2 border-front/20">
+    <div className="basis-1/2 flex flex-wrap gap-x-6 gap-y-4 widescreen:border-r widescreen:pr-2 border-front/20">
       <div className="items-center flex flex-col">
         <div className="border-4 border-red-500/50 rounded-full aspect-square py-3 px-4 items-center flex">
           28

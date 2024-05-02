@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
         <div className="my-10 ">
           <Link
-          to="/home"
+            to="/home"
             className="relative text-2xl font-semibold flex items-center gap-x-4"
           >
             Start the Module!
@@ -29,31 +29,57 @@ export default function Hero() {
             </span>
           </Link>
         </div>
-        <div className="my-3 flex max-w-[45vw] gap-x-8">
-          <div className="flex max-w-[45%] gap-x-5">
-            <img
-              draggable={false}
-              src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
-              alt="robot"
-              className="aspect-square w-14 h-14"
-            />
-            <p className="text-sm text-front text-opacity-50">
-              We have a bot, "Finny" which helps you understand your finance and
-              recommend you modules
-            </p>
-          </div>
-          <div className="flex max-w-[45%] gap-x-5">
-            <img
-              draggable={false}
-              src="https://cdn-icons-png.freepik.com/256/8078/8078617.png?semt=ais_hybrid"
-              alt="xp"
-              className="aspect-square w-14 h-14"
-            />
-            <p className="text-sm text-front text-opacity-50">
-              You can earn XP by completing modules, and maintaining a streak to
-              earn more XP!
-            </p>
-          </div>
+        <div className="my-3 flex gap-y-8 flex-col max-w-[45vw] gap-x-8">
+            <div className="flex gap-x-4">
+              <div className="flex max-w-[45%] gap-x-5">
+                <img
+                  draggable={false}
+                  src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
+                  alt="robot"
+                  className="aspect-square w-14 h-14"
+                />
+                <p className="text-sm text-front text-opacity-50">
+                  We have a bot, "Finny" which helps you understand your finance
+                  and recommend you modules
+                </p>
+              </div>
+              <div className="flex max-w-[45%] gap-x-5">
+                <img
+                  draggable={false}
+                  src="https://cdn-icons-png.freepik.com/256/8078/8078617.png?semt=ais_hybrid"
+                  alt="xp"
+                  className="aspect-square w-14 h-14"
+                />
+                <p className="text-sm text-front text-opacity-50">
+                  You can earn XP by completing modules, and maintaining a
+                  streak to earn more XP!
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-x-4">
+              <div className="flex max-w-[45%] gap-x-5">
+                <img
+                  draggable={false}
+                  src="https://img.icons8.com/fluency/48/virtual-reality.png"
+                  alt="xp"
+                  className="aspect-square w-14 h-14"
+                />
+                <p className="text-sm text-front text-opacity-50">
+                With the AR service analysis, Scanned financial documents, extract pertinent data using OCR technologies!
+                </p>
+              </div>
+              <div className="flex max-w-[45%] gap-x-5">
+                <img
+                  draggable={false}
+                  src="https://img.icons8.com/fluency/48/group.png"
+                  alt="xp"
+                  className="aspect-square w-14 h-14"
+                />
+                <p className="text-sm text-front text-opacity-50">
+                 Interact with the community, ask you doubt away, share your experince, and Grow your connections!
+                </p>
+              </div>
+            </div>
         </div>
       </div>
       <div className="flex flex-1 flex-col items-center justify-center">

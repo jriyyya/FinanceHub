@@ -28,6 +28,10 @@ export function clampValue(
   return ans;
 }
 
+export async function sleep(ms: number) {
+  await new Promise((r) => setTimeout(r, ms));
+}
+
 export function linearMap(
   value: number,
   mapFrom: { from: number; to: number },

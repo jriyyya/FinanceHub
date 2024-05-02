@@ -14,6 +14,8 @@ import CoursePage from "./CoursePage/CoursePage";
 import ModulePage from "./ModulePage/ModulePage";
 import FinnyBotPage from "./FinnyBotPage/FinnyBotPage";
 import LandingPage from "./LandingPage/LandingPage";
+import ArPage from "./ArPage/ArPage";
+import TeamPage from "./TeamPage/TeamPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,10 +28,12 @@ const router = createBrowserRouter(
         <Route element={<CoursePage />} path="/course" />
         <Route element={<ModulePage />} path="/module" />
         <Route element={<FinnyBotPage />} path="/finny" />
+        <Route element={<ArPage />} path="advisor" />
         <Route path="*" element={<ErrorPage />} />
       </Route>
       <Route index element={<LandingPage />} />
       <Route path="*" element={<ErrorPage />} />
+      <Route path="/team" element={<TeamPage />} />
     </>
   )
 );

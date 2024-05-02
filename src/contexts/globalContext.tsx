@@ -12,6 +12,10 @@ interface GlobalContextType {
     modal: ReactNode;
     setModal: React.Dispatch<React.SetStateAction<React.ReactNode>>;
   };
+  popupDrawerState: {
+    value: ReactNode;
+    setter: React.Dispatch<React.SetStateAction<React.ReactNode>>;
+  };
   themeState: {
     theme: Theme;
     setTheme: React.Dispatch<React.SetStateAction<Theme>>;
@@ -23,6 +27,7 @@ const GlobalContext = createContext<GlobalContextType>({} as GlobalContextType);
 export function GlobalContextProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
   const [modal, setModal] = useState<ReactNode | null>();
+  const [popupDrawer, setPopupDrawer] = useState<ReactNode>();
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("vitess__arewefastyet__theme");
@@ -47,6 +52,7 @@ export function GlobalContextProvider({ children }: { children: ReactNode }) {
   const value = {
     modalState: { modal, setModal },
     themeState: { theme, setTheme },
+    popupDrawerState: { value: popupDrawer, setter: setPopupDrawer },
   };
 
   return (

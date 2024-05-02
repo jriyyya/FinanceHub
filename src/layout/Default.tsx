@@ -5,26 +5,38 @@ import { useRef } from "react";
 import useIdleScrollbar from "../hooks/useIdleScrollbar";
 import StatisticsSidebar from "../common/StatisticsSidebar";
 import Header from "../common/Header";
+import PopupDrawer from "../common/PopupDrawer";
+import { twMerge } from "tailwind-merge";
+import usePopoverDrawer from "../hooks/usePopoverDrawer";
 
 export default function Default() {
   const mainSectionRef = useRef() as React.MutableRefObject<HTMLDivElement>;
 
   useIdleScrollbar(mainSectionRef, { idleType: "hidden" });
+  const drawer = usePopoverDrawer();
 
   return (
     <>
-      <Modal />
-
       <main className="flex h-screen">
-        <SideNav />
-        <section
-          ref={mainSectionRef}
-          className="h-screen overflow-y-scroll flex-1 scrollbar-primary"
+        <Modal />
+        <PopupDrawer />
+
+        <div
+          className={twMerge(
+            "duration-500 flex w-full",
+            drawer.element != null && "scale-[98%]"
+          )}
         >
-          {/* <Header /> */}
-          <Outlet />
-        </section>
-        <StatisticsSidebar />
+          <SideNav />
+          <section
+            ref={mainSectionRef}
+            className="h-screen overflow-y-scroll flex-1 scrollbar-primary"
+          >
+            {/* <Header /> */}
+            <Outlet />
+          </section>
+          <StatisticsSidebar />
+        </div>
       </main>
     </>
   );

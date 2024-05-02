@@ -3,7 +3,6 @@ import Icon from "../../common/Icon";
 
 export default function ModulePage() {
   const [progress, setProgress] = useState(0);
-  console.log((progress / data.length) * 100);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const handleButtonClick = () => {
@@ -68,7 +67,7 @@ export default function ModulePage() {
               Key Highlights
             </h1>
             <div className="flex flex-wrap gap-2">
-              {data[progress].content.map((con, key) => (
+              {data[progress].highlights.map((con, key) => (
                 <div
                   key={key}
                   className="bg-primary/10 py-2 px-4 rounded-r-3xl min-w-[70%]"
@@ -83,10 +82,7 @@ export default function ModulePage() {
 
       {progress == data.length && (
         <div className="w-full flex flex-col gap-y-8 font-semibold items-center pt-24 h-full overflow-hidden">
-          <img
-            src="/catsDancing.gif"
-            className="w-[40%] rounded-xl"
-          />
+          <img src="/catsDancing.gif" className="w-[40%] rounded-xl" />
           <div className="flex gap-x-4 items-center">
             <h1 className="tracking-widesr text-4xl">MODULE COMPLETED!!!</h1>
             <div className="text-xl bg-green-500/80 px-5 py-1 rounded-2xl font-bold">
@@ -108,103 +104,33 @@ export default function ModulePage() {
 
 const data = [
   {
-    title: "Understanding Compound Interest",
+    title: "The Total Money Makeover by Dave Ramsey",
     description:
-      "This comprehensive module delves into the intricate workings of compound interest, a fundamental concept in finance that has profound implications for individuals' financial trajectories. Through engaging discussions and illustrative examples, participants will gain a deep understanding of how compound interest accelerates the growth of savings and investments over time. Topics covered include the mechanics of compound interest, its compounding effects on various financial instruments, and practical strategies for harnessing its power to achieve long-term financial goals.",
-    content: [
-      "Mechanics of Compound Interest",
-      "Compounding Effects on Savings and Investments",
-      "Strategies for Maximizing Compound Interest",
+      "Dave Ramsey's 'The Total Money Makeover' is a comprehensive guide aimed at individuals seeking financial transformation. The book outlines practical steps to achieve financial health, primarily through the elimination of debt, careful budgeting, and the cultivation of wealth. Ramsey introduces the 'Debt Snowball' method, which involves paying off debts from smallest to largest, gaining momentum as each balance is cleared. This approach not only simplifies the debt repayment process but also provides psychological wins that motivate the individual to continue. Throughout the book, Ramsey emphasizes the need for a solid emergency fund as a foundation for financial stability, advocating for starting with $1,000 and building it to cover several months of expenses. The book also addresses common financial pitfalls and provides insights on avoiding these traps. Ramsey's straightforward, no-nonsense advice is backed by numerous testimonials from individuals who have achieved financial freedom by following his plan.",
+    highlights: [
+      "Debt Snowball method for debt reduction",
+      "Creating and sticking to a budget",
+      "Importance of emergency funds",
     ],
   },
   {
-    title: "Managing Credit Card Debt",
+    title: "Rich Dad Poor Dad by Robert T. Kiyosaki",
     description:
-      "In this module, participants will learn essential strategies for effectively managing credit card debt, a common financial challenge faced by many individuals. Through insightful guidance and actionable tips, participants will discover how to navigate the complexities of credit card debt, develop effective debt repayment strategies, and avoid common pitfalls that can exacerbate financial difficulties.",
-    content: [
-      "Understanding Credit Card Interest Rates",
-      "Debt Repayment Strategies",
-      "Budgeting for Debt Reduction",
+      "'Rich Dad Poor Dad' by Robert T. Kiyosaki is a seminal book in personal finance literature, exploring the differing financial teachings of his two fathers: his biological father (the 'Poor Dad') and the father of his best friend (the 'Rich Dad'). This book challenges many traditional notions of finance, such as the emphasis on earning a high salary as the path to wealth. Instead, Kiyosaki focuses on the importance of financial education, investing, and understanding the distinction between assets and liabilities. The central thesis of the book is that the rich teach their children how to acquire assets that generate income, whereas the poor and middle class focus on acquiring liabilities that they mistakenly believe to be assets, such as their primary residence. Kiyosaki also emphasizes the need to cultivate a mindset that embraces risk-taking and innovation, suggesting that financial freedom comes from understanding how money works and making it work for you. The narrative is compelling and serves as an inspirational blueprint for thinking about money in ways that can lead to wealth accumulation.",
+    highlights: [
+      "Investment basics",
+      "Differences between assets and liabilities",
+      "Mindset of financial independence",
     ],
   },
   {
-    title: "Budgeting Basics",
+    title: "You Need A Budget (YNAB)",
     description:
-      "Budgeting is the cornerstone of sound financial management. This module provides participants with a comprehensive introduction to budgeting principles, empowering them to take control of their finances and achieve their financial goals. Through practical guidance and interactive exercises, participants will learn how to create a personalized budget, track expenses effectively, and cultivate healthy spending habits.",
-    content: [
-      "Creating a Personal Budget",
-      "Expense Tracking Tools",
-      "Developing Healthy Spending Habits",
-    ],
-  },
-  {
-    title: "Investing for Beginners",
-    description:
-      "Investing can seem daunting to beginners, but this module demystifies the process and equips participants with the knowledge and confidence to embark on their investment journey. Participants will learn about essential investment concepts, different investment vehicles, and strategies for building a diversified investment portfolio tailored to their financial goals and risk tolerance.",
-    content: [
-      "Understanding Investment Basics",
-      "Types of Investment Vehicles",
-      "Building a Diversified Portfolio",
-    ],
-  },
-  {
-    title: "Retirement Planning Essentials",
-    description:
-      "Planning for retirement is a crucial aspect of financial planning. In this module, participants will learn essential retirement planning strategies to secure their financial future. Topics covered include retirement savings options, calculating retirement needs, and creating a comprehensive retirement income plan to ensure financial security during retirement years.",
-    content: [
-      "Exploring Retirement Savings Options",
-      "Calculating Retirement Needs",
-      "Creating a Retirement Income Plan",
-    ],
-  },
-  {
-    title: "Debt Consolidation Strategies",
-    description:
-      "Dealing with multiple debts can be overwhelming, but debt consolidation offers a practical solution. In this module, participants will learn about different debt consolidation strategies, their benefits and drawbacks, and how to implement a consolidation plan effectively to streamline debt repayment and regain financial stability.",
-    content: [
-      "Understanding Debt Consolidation",
-      "Types of Consolidation Loans",
-      "Implementing a Consolidation Plan",
-    ],
-  },
-  {
-    title: "Tax Planning Fundamentals",
-    description:
-      "Tax planning is an integral part of financial planning, and this module provides participants with essential knowledge and strategies to optimize their tax situation. Participants will learn about tax deductions, credits, retirement account contributions, and other tax-efficient strategies to minimize tax liability and maximize savings.",
-    content: [
-      "Understanding Tax Deductions and Credits",
-      "Maximizing Retirement Account Contributions",
-      "Tax-Efficient Investment Strategies",
-    ],
-  },
-  {
-    title: "Emergency Fund Essentials",
-    description:
-      "An emergency fund is a financial safety net that provides peace of mind and security during unexpected financial setbacks. This module covers the importance of having an emergency fund, determining the appropriate amount to save, and practical strategies for building and maintaining an emergency fund for financial stability.",
-    content: [
-      "Understanding the Purpose of an Emergency Fund",
-      "Determining the Right Amount to Save",
-      "Strategies for Building an Emergency Fund",
-    ],
-  },
-  {
-    title: "Estate Planning Basics",
-    description:
-      "Estate planning is essential for ensuring that your assets are distributed according to your wishes and minimizing potential conflicts among heirs. In this module, participants will learn about key components of estate planning, including wills, trusts, probate, and beneficiary designations, and how to create a comprehensive estate plan to protect their legacy.",
-    content: [
-      "Components of an Estate Plan",
-      "Minimizing Estate Taxes",
-      "Updating and Maintaining Your Estate Plan",
-    ],
-  },
-  {
-    title: "Financial Goal Setting",
-    description:
-      "Setting clear financial goals is the first step towards achieving financial success. This module guides participants through the process of identifying their financial goals, prioritizing them, and creating actionable plans to turn their aspirations into reality. Participants will learn valuable strategies for staying motivated and accountable on their financial journey.",
-    content: [
-      "Identifying Financial Goals",
-      "Prioritizing Goals",
-      "Creating Actionable Plans",
+      "You Need A Budget, or YNAB, is not just budgeting software but a philosophy of financial management that stresses proactive control of finances. It is based on four simple rules: Give every dollar a job, embrace your true expenses, roll with the punches, and age your money. These principles help users to break the paycheck-to-paycheck cycle, get out of debt, and save more money. Unlike traditional budgeting approaches that focus on past spending, YNAB focuses on giving each dollar a role in the future, whether it's covering immediate expenses, achieving longer-term financial goals, or investing. The platform provides robust tools for tracking spending and managing finances, along with a wealth of educational resources, including online classes, blogs, and video tutorials, to help users understand and implement its principles effectively. YNAB's approach is particularly beneficial for those who need a more structured system to manage their financial life, offering a clear, actionable plan that can adjust to life's financial ups and downs.",
+    highlights: [
+      "Proactive budgeting philosophy",
+      "Tools for expense tracking and financial planning",
+      "Educational resources for effective budget management",
     ],
   },
 ];

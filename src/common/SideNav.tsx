@@ -5,10 +5,10 @@ import Icon, { IconType } from "./Icon";
 export default function Navbar() {
   const navItems: Array<{ title: string; link: string; icon: IconType }> = [
     { title: "Home", link: "/home", icon: "home" },
-    { title: "Finny Bot", link: "/finny", icon: "robot" },
-    { title: "Leaderboard", link: "/leaderboard", icon: "analytics" },
     { title: "Community", link: "/community", icon: "description" },
-    // { title: "News", link: "/blog", icon: "grid" },
+    { title: "Leaderboard", link: "/leaderboard", icon: "analytics" },
+    {title: "AR Advisor", link: "advisor", icon: "ar"},
+    { title: "Finny Bot", link: "/finny", icon: "robot" },
     { title: "Account", link: "/account", icon: "person" },
     { title: "Logout", link: "/", icon: "logout" },
   ];

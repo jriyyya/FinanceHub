@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../../common/Header";
 import ThemeButton from "../../common/ThemeButton";
 import Hero from "./components/Hero";
@@ -8,7 +9,7 @@ export default function LandingPage() {
       <div className="border-b pb-6 border-front/20 flex absolute pt-6 items-center w-full text-lg tracking-wide justify-center gap-x-8">
         {navLinks.map((navLink, i) => (
           <>
-            <div>{navLink.title}</div>
+            <Link to={navLink.to} className="cursor-pointer">{navLink.title}</Link>
             {navLinks.length -1 > i && <span className="text-3xl">•</span>}
           </>
         ))}
@@ -34,6 +35,6 @@ const navLinks = [
   },
   {
     title: "Team",
-    to: "/",
+    to: "/team",
   },
 ];

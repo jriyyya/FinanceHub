@@ -5,9 +5,9 @@ import usePopoverDrawer from "../../../hooks/usePopoverDrawer";
 export default function Hero() {
   const drawer = usePopoverDrawer();
   return (
-    <section className="px-24 py-24 flex h-screen">
-      <div className="flex flex-col gap-y-5 py-12">
-        <h1 className="text-5xl font-semibold leading-snug">
+    <section className="px-24 widescreen:py-24 flex h-screen mobile:px-12 mobile:py-6">
+      <div className="flex flex-col gap-y-5 widescreen:py-12 mobile:pt-24">
+        <h1 className="text-5xl font-semibold leading-snug mobile:text-3xl">
           Empower your wallet.
           <br />
           Fihub: Finance made simple
@@ -18,20 +18,20 @@ export default function Hero() {
           <span className="font-semibold text-primary">FiHub</span> to start
           your journey!
         </p>
-        <div className="my-10 ">
+        <div className="my-10 mobile:my-2">
           <Link
             to="/home"
-            className="relative text-2xl font-semibold flex items-center gap-x-4"
+            className="relative text-2xl font-semibold flex items-center gap-x-4 mobile:text-xl"
           >
             Start the Module!
             <span className="bg-primary/5 border border-primary/30 rounded-full p-3">
-              <Icon icon="lesson" className="text-[2.1rem]" />
+              <Icon icon="lesson" className="text-[2.1rem] mobile:text-[1.5rem]" />
             </span>
           </Link>
         </div>
-        <div className="my-3 flex gap-y-8 flex-col max-w-[45vw] gap-x-8">
-            <div className="flex gap-x-4">
-              <div className="flex max-w-[45%] gap-x-5">
+        <div className="my-3 flex gap-y-8 flex-col widescreen:max-w-[45vw] gap-x-8 mobile:w-full">
+            <div className="flex gap-x-4 mobile:flex-col mobile:gap-y-8">
+              <div className="flex widescreen:max-w-[45%] gap-x-5 mobile:w-full">
                 <img
                   draggable={false}
                   src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
@@ -43,7 +43,7 @@ export default function Hero() {
                   and recommend you modules
                 </p>
               </div>
-              <div className="flex max-w-[45%] gap-x-5">
+              <div className="flex widescreen:max-w-[45%] gap-x-5 mobile:w-full">
                 <img
                   draggable={false}
                   src="https://cdn-icons-png.freepik.com/256/8078/8078617.png?semt=ais_hybrid"
@@ -56,8 +56,8 @@ export default function Hero() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-x-4">
-              <div className="flex max-w-[45%] gap-x-5">
+            <div className="flex gap-x-4 mobile:w-full mobile:flex-col mobile:gap-y-6">
+              <div className="flex widescreen:max-w-[45%] gap-x-5">
                 <img
                   draggable={false}
                   src="https://img.icons8.com/fluency/48/virtual-reality.png"
@@ -68,7 +68,7 @@ export default function Hero() {
                 With the AR service analysis, Scanned financial documents, extract pertinent data using OCR technologies!
                 </p>
               </div>
-              <div className="flex max-w-[45%] gap-x-5">
+              <div className="flex widescreen:max-w-[45%] gap-x-5">
                 <img
                   draggable={false}
                   src="https://img.icons8.com/fluency/48/group.png"
@@ -82,7 +82,7 @@ export default function Hero() {
             </div>
         </div>
       </div>
-      <div className="flex flex-1 flex-col items-center justify-center">
+      <div className="flex flex-1 flex-col items-center justify-center mobile:hidden">
         <div className="h-[95%] w-[80%] rounded-t-full rounded-bl-full rounded-br-[145rem] bg-primary flex items-center justify-center overflow-hidden">
           <img
             src="https://extension.harvard.edu/wp-content/uploads/sites/8/2022/07/careers-in-corporate-finance.jpg"

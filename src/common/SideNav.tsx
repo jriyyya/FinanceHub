@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 import Icon, { IconType } from "./Icon";
 import { useRef, useState } from "react";
 import useClickOutside from "../hooks/useClickOutside";
+import ThemeButton from "./ThemeButton";
 
 export default function Navbar() {
   const navItems: Array<{ title: string; link: string; icon: IconType }> = [
@@ -17,7 +18,7 @@ export default function Navbar() {
 
   const [hidden, setHidden] = useState(true);
   const outclickRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  useClickOutside(outclickRef, () => !hidden && setHidden(true));
+  // useClickOutside(outclickRef, () => !hidden && setHidden(false));
 
   return (
     <>
@@ -57,15 +58,22 @@ export default function Navbar() {
       </nav>
 
       {hidden && (
-        <button onClick={() => setHidden(false)}>
+        <button onClick={() => setHidden(false)} className="widescreen:hidden">
           <Icon icon="menu" className="text-4xl absolute top-2 left-2" />
         </button>
       )}
+      <div className="absolute right-3 top-3 widescreen:hidden">
+        <ThemeButton className="text-2xl p-2 aspect-square bg-foreground rounded-full flex justify-center items-center border border-front border-opacity-40" />
+      </div>
       {!hidden && (
         <nav
-          className="flex flex-col p-6 border-r border-border widescreen:hidden absolute top-0 left-0 bg-background h-full"
+          className="z-10 flex flex-col p-6 border-r border-border widescreen:hidden absolute top-0 left-0 bg-background h-full"
           ref={outclickRef}
         >
+          <div className="absolute bottom-8 right-8 flex items-center" onClick={() => (setHidden(true))}>
+            <p className="underline">Close</p>
+            <Icon icon="close" className="text-xl" />
+          </div>
           <div className="flex items-center gap-x-2">
             <img src="/logo.png" alt="logo" className="aspect-square w-10" />
             <div className="flex flex-col gap-y-1">

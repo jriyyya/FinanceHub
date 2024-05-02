@@ -16,7 +16,7 @@ export default function ModulePage() {
     }
   };
   return (
-    <div className="px-24 flex flex-col items-center py-12 relative h-full">
+    <div className="px-24 flex flex-col items-center py-12 relative mobile:px-8 ">
       {/* likes and comments */}
       <div className="flex items-center gap-x-8">
         <div className="flex items-center">
@@ -34,7 +34,7 @@ export default function ModulePage() {
         <button
           onClick={() => setProgress(progress - 1)}
           disabled={progress <= 0}
-          className="-translate-x-6 p-1 bg-primary/20 rounded-full hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          className="-translate-x-6 mobile:translate-x-0 p-1 bg-primary/20 rounded-full hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Icon icon="arrow_forward" className="rotate-180 text-[1.5rem]" />
         </button>
@@ -82,10 +82,10 @@ export default function ModulePage() {
 
       {progress == data.length && (
         <div className="w-full flex flex-col gap-y-8 font-semibold items-center pt-24 h-full overflow-hidden">
-          <img src="/catsDancing.gif" className="w-[40%] rounded-xl" />
-          <div className="flex gap-x-4 items-center">
-            <h1 className="tracking-widesr text-4xl">MODULE COMPLETED!!!</h1>
-            <div className="text-xl bg-green-500/80 px-5 py-1 rounded-2xl font-bold">
+          <img src="/catsDancing.gif" className="w-[40%] rounded-xl mobile:w-[80%]" />
+          <div className="flex gap-x-4 items-center ">
+            <h1 className="tracking-widesr text-4xl mobile:text-3xl">MODULE COMPLETED!!!</h1>
+            <div className="text-xl mobile:whitespace-nowrap bg-green-500/80 px-5 py-1 rounded-2xl font-bold">
               +10 XP
             </div>
           </div>

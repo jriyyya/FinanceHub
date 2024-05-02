@@ -22,7 +22,6 @@ export default function Hero() {
           <Link
           to="/home"
             className="relative text-2xl font-semibold flex items-center gap-x-4"
-            // onClick={() => drawer.show(<AssessmentModal />)}
           >
             Start the Module!
             <span className="bg-primary/5 border border-primary/30 rounded-full p-3">

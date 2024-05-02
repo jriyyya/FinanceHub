@@ -15,12 +15,12 @@ export default function FinnyBotPage() {
           </div>
         </div>
 
-        <div className="flex gap-x-4 bg-primary/5 p-4 rounded-xl">
+        <div className="flex gap-x-4 bg-primary/10 p-4 rounded-r-2xl rounded-t-2xl">
           <img
             src="https://t4.ftcdn.net/jpg/01/91/93/03/360_F_191930303_c1u8vl5OypVoK5LfcKIfSc17hjjOxVVP.jpg"
             className="w-[3vw] rounded-full aspect-square h-[3vw]"
           />
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <h1 className="text-sm font-bold">You</h1>
             <p className="text-front/80">
               I am your finance support bot, You can ask me questions and doubts

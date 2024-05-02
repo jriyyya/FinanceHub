@@ -24,7 +24,7 @@ export default function Hero() {
             className="relative text-2xl font-semibold flex items-center gap-x-4"
             // onClick={() => drawer.show(<AssessmentModal />)}
           >
-            Start the Assesment!
+            Start the Module!
             <span className="bg-primary/5 border border-primary/30 rounded-full p-3">
               <Icon icon="lesson" className="text-[2.1rem]" />
             </span>

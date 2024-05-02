@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 export default function Courses() {
   return (
-    <section className="mx-16 bg-secondary/5 p-6 rounded-xl flex flex-col items-center gap-y-6">
+    <section className="mx-16 bg-secondary/5 p-6 rounded-xl flex flex-col items-center gap-y-6 mobile:mx-8">
       <h1 className="text-[1.5rem] font-bold">Explore our courses</h1>
-      <div className="flex gap-x-2">
-        <button className="px-3 rounded-lg py-1 border-primary/20 bg-primary/80 text-back font-semibold border">
+      <div className="flex gap-x-2 mobile:overflow-x-scroll mobile:w-[90%] mobile:scrollbar-primary mobile:pb-2">
+        <button className="px-3 rounded-lg py-1 border-primary/20 bg-primary/80 text-back font-semibold border mobile:text-sm mobile:whitespace-nowrap">
           All sectors
         </button>
         {sectors.map((sector, i) => (
           <button
             key={i}
-            className="px-3 rounded-lg py-1 border-primary/30 border text-primary/80 font-medium"
+            className="px-3 rounded-lg py-1 border-primary/30 border text-primary/80 font-medium mobile:text-sm"
           >
             {sector}
           </button>
@@ -19,19 +19,33 @@ export default function Courses() {
       </div>
       <div className="flex flex-col gap-y-8">
         {courses.map((course, i) => (
-          <Link to={"/course"}
-            className="flex gap-x-6 5 p-4 rounded-xl hover:bg-front/5 cursor-pointer duration-300 ease-in border border-front/20"
+          <Link
+            to={"/course"}
+            className="flex gap-x-6 5 p-4 rounded-xl hover:bg-front/5 cursor-pointer duration-300 ease-in border border-front/20 mobile:flex-col mobile:gap-y-3"
             key={i}
           >
             <img
               src={course.imgUrl}
               alt=""
-              className="w-[6vw] aspect-square h-max rounded-full border border-primary p-1 object-cover"
+              className="w-[6vw] aspect-square h-max rounded-full border border-primary p-1 object-cover mobile:w-[16vw] mobile:hidden"
             />
+            <div className="flex gap-x-4 items-center widescreen:hidden">
+              <img
+                src={course.imgUrl}
+                alt=""
+                className="w-[6vw] aspect-square h-max rounded-full border border-primary p-1 object-cover mobile:w-[16vw]"
+              />
+              <div className="widescreen:hidden flex flex-col items-start">
+                <h1 className="text-lg font-bold">{course.name}</h1>
+                <div className="text-xs bg-primary text-back font-semibold px-3 py-1 rounded-xl mt-1">
+                  Modules : <span className="">{course.modules}</span>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col">
-              <h1 className="text-lg font-bold">{course.name}</h1>
+              <h1 className="text-lg font-bold mobile:hidden">{course.name}</h1>
               <p className="text-sm text-front/80">{course.description}</p>
-              <div className="text-sm self-end bg-primary text-back font-semibold px-3 py-1 rounded-xl mt-3">
+              <div className="text-sm self-end bg-primary text-back font-semibold px-3 py-1 rounded-xl mt-3 mobile:hidden">
                 Modules : <span className="">{course.modules}</span>
               </div>
             </div>
@@ -86,8 +100,7 @@ const courses = [
     name: "Retirement Planning",
     description:
       "Prepare for a financially secure retirement by understanding key retirement planning concepts and strategies. In this comprehensive course, you'll learn about retirement accounts, investment options, income planning, and risk management techniques to build a retirement nest egg that lasts a lifetime. Explore topics such as retirement savings goals, employer-sponsored retirement plans, individual retirement accounts (IRAs), Social Security benefits, and annuities.",
-    imgUrl:
-      "https://cdn-icons-png.flaticon.com/512/5798/5798292.png",
+    imgUrl: "https://cdn-icons-png.flaticon.com/512/5798/5798292.png",
     modules: 7,
   },
   {
@@ -102,8 +115,7 @@ const courses = [
     name: "Estate Planning",
     description:
       "Protect your assets and ensure your wishes are carried out with proper estate planning. In this comprehensive course, you'll learn about wills, trusts, power of attorney, and healthcare directives, and understand the importance of estate planning in preserving wealth and providing for loved ones. Explore topics such as probate process, estate taxes, beneficiary designations, and charitable giving..",
-    imgUrl:
-      "https://cdn-icons-png.flaticon.com/512/1029/1029022.png",
+    imgUrl: "https://cdn-icons-png.flaticon.com/512/1029/1029022.png",
     modules: 9,
   },
 ];

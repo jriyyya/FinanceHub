@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
-    <section className="px-24 flex flex-col items-center py-16">
-      <div className="flex flex-col gap-y-8 w-full items-center">
+    <section className="px-24 flex flex-col items-center py-16 mobile:px-12">
+      <div className="flex flex-col gap-y-8 w-full items-center mobile:justify-center">
         <h1 className="text-2xl font-bold">My Courses</h1>
-        <div className="flex w-full scrollbar-primary gap-x-6 justify-center">
+        <div className="flex w-full scrollbar-primary gap-x-6 justify-center mobile:items-center mobile:flex-col mobile:gap-y-8">
           {myCourses.map((course, i) => (
             <div
-              className="shadow-sm shadow-primary border border-primary/20 rounded-xl w-[30%] items-center px-4 flex flex-col gap-y-6 py-6 justify-between hover:scale-105 hover:bg-primary/5 duration-300 ease-in cursor-pointer"
+              className="shadow-sm shadow-primary border border-primary/20 rounded-xl w-[30%] mobile:w-[70%] items-center px-4 flex flex-col gap-y-6 py-6 justify-between hover:scale-105 hover:bg-primary/5 duration-300 ease-in cursor-pointer"
               key={i}
             >
               <div className="flex flex-col items-center gap-y-2">

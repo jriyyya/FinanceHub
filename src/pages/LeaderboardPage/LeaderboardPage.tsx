@@ -3,10 +3,10 @@ import Icon from "../../common/Icon";
 
 export default function LeaderboardPage() {
   return (
-    <section className="flex flex-col px-12 py-12 gap-y-8">
+    <section className="flex flex-col px-12 py-12 gap-y-8 mobile:px-6">
       <h1 className="self-center text-2xl font-bold font-sans">Leaderboard</h1>
       <div className="flex gap-x-6">
-        <div className="basis-[60%] flex flex-col gap-y-3 bg-secondary/5 rounded-xl p-6">
+        <div className="basis-[60%] flex flex-col gap-y-3 bg-secondary/5 rounded-xl p-6 mobile:basis-full">
           {data.map((user, i) => (
             <div
               key={i}
@@ -22,7 +22,7 @@ export default function LeaderboardPage() {
                 <img
                   src={user.imageUrl}
                   alt={user.name}
-                  className="w-[3vw] rounded-full"
+                  className="w-[3vw] rounded-full mobile:w-[8vw]"
                 />
                 <h1 className="font-bold">
                   {user.name}
@@ -37,7 +37,7 @@ export default function LeaderboardPage() {
             </div>
           ))}
         </div>
-        <div className="basis-[40%] bg-secondary/5 h-max p-4 rounded-xl">
+        <div className="basis-[40%] bg-secondary/5 h-max p-4 rounded-xl mobile:hidden">
           <h1 className="text-xl font-semibold">Earn XP</h1>
           <div className="flex flex-col gap-y-4 mt-4">
             <div className="flex items-center justify-between border border-front/10 px-4 py-4 rounded-xl">

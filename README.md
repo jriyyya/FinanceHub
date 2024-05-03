@@ -48,13 +48,13 @@ To run Fihub locally, follow these steps:
 1. Clone this repository to your local machine.
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/jriyyya/financehub
     ```
 
 2. Navigate to the project directory.
 
     ```bash
-    cd your-repo
+    cd financehub
     ```
 
 3. Install dependencies using npm or yarn.

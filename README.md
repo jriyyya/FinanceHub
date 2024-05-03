@@ -1,7 +1,6 @@
 # Fihub: Finance made simple
 
 ## Description
----
 The Financial Literacy App is designed to empower young adults and professionals aged 18-35 in urban and semi-urban areas of India
 with practical financial education. Our app addresses the needs of a tech-savvy audience who prefer interactive and engaging learning
 experiences over traditional educational methods.
@@ -61,12 +60,6 @@ To run Fihub locally, follow these steps:
 3. Install dependencies using npm or yarn.
 
     ```bash
-    npm install
-    ```
-
-    or
-
-    ```bash
     yarn install
     ```
 
@@ -75,7 +68,7 @@ To run Fihub locally, follow these steps:
 To start the development server and view the app, run the following command:
 
 ```bash
- npm run dev
+ yarn dev
 ```
 ## Features
 

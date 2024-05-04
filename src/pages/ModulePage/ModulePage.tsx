@@ -12,7 +12,7 @@ export default function ModulePage() {
 
       setTimeout(() => {
         setIsButtonDisabled(false);
-      }, 300);
+      }, 10000);
     }
   };
   return (

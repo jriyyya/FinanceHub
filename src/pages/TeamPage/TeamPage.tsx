@@ -52,10 +52,6 @@ const team = [
     imgUrl: "https://avatars.githubusercontent.com/u/102902652?v=4",
   },
   {
-    name: "Lata",
-    imgUrl: "/lata.jpeg",
-  },
-  {
     name: "Sakshi",
     imgUrl: "https://avatars.githubusercontent.com/u/96080203?v=4",
   },

@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import Icon from "../../../common/Icon";
-import usePopoverDrawer from "../../../hooks/usePopoverDrawer";
-
 export default function Hero() {
-  const drawer = usePopoverDrawer();
   return (
     <section className="px-24 widescreen:py-24 flex h-screen mobile:px-12 mobile:py-6">
       <div className="flex flex-col gap-y-5 widescreen:py-12 mobile:pt-24">

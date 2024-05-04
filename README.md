@@ -1,37 +1,96 @@
-# Client
+# Fihub: Finance made simple
 
-## Fonts
----
-Add more fonts by editing src/assets/styles/index.css
+## Description
+The Financial Literacy App is designed to empower young adults and professionals aged 18-35 in urban and semi-urban areas of India
+with practical financial education. Our app addresses the needs of a tech-savvy audience who prefer interactive and engaging learning
+experiences over traditional educational methods.
 
-Just copy paste the entire font import syntax and simply replace the name with another google font to add it to your client
+## Table of Contents
 
-To add fonts that are not google fonts, if you have ttf or wff files add them to src/assets/fonts
+- [Description](#description)
+- [Target Audience](#target-audience)
+- [Installation](#installation)
+- [Features](#features)
+- [Deployment](#deployment)
 
+## Target Audience
+### Demographics and Needs:
+Our primary target audience includes young adults and professionals aged 18-35 in urban and semi-urban areas of India, who often struggle with financial management due to a lack of practical financial education.
 
-## Icons
----
-https://fonts.google.com/icons 
+### Behavioral Insights:
+This group is tech-savvy, heavily uses mobile devices, and prefers interactive and engaging learning experiences over traditional educational methods.
 
-Here are all usable icons, search for one and simply get it's codepoint (select and scroll the sidebar)
+## Analysis of Current Solutions
 
-replace codepoint with the codepoint of icon you wish to include
-You can then simply add a font by using it's codepoint and using the ```<MaterialIcon codepoint="" />``` component
+### Gaps in Existing Offerings:
+Most current financial literacy programs are either too generic, lack interactive elements, or do not provide ongoing support. Many fail to engage users continuously or adapt to individual learning paces and styles.
 
+### Competitive Overview:
+Other apps and platforms, like financial advising services, educational courses, or gamified learning apps, are performing but missing critical engagement or personalization elements.
 
-## Tailwind and CSS
----
-Check out src/assets/styles folder for most raw css
+## Market Needs
 
-Tailwind config file has already been bootstrapped
+### Personalization:
+There is a high demand for personalized learning experiences that adapt to individual financial situations and learning speeds.
 
- 
+### Community Support:
+Users benefit from peer learning and mentorship, which are often absent in traditional financial education settings.
 
-# Server
-Add more endpoints by adding to src/routes foder then import into _index.ts which represents the indexRouter
+### 24/7 Accessibility:
+Around-the-clock support is crucial for users who manage finances on their own and often have queries or need guidance after typical work hours.
 
-# Deployment
-## Vercel
-  - The repo can be deployed directly to vercel for both client and server without much extra config needed
-## Netlify
-  - Netlify can be used to host the client as well though vercel is recommended
+In light of the market analysis, our aim is to provide a personalized, interactive, and supportive learning environment.
+
+## Installation
+
+To run Fihub locally, follow these steps:
+
+1. Clone this repository to your local machine.
+
+    ```bash
+    git clone https://github.com/jriyyya/financehub
+    ```
+
+2. Navigate to the project directory.
+
+    ```bash
+    cd financehub
+    ```
+
+3. Install dependencies using npm or yarn.
+
+    ```bash
+    yarn install
+    ```
+
+## Usage
+
+To start the development server and view the app, run the following command:
+
+```bash
+ yarn dev
+```
+## Features
+
+### Interactive Modules with Quizzes
+Each educational module is designed to be completed in a sequential manner, culminating in a quiz/assessment that tests the user's understanding. Successful completion earns XP points, enhancing motivation through gamification.
+
+### Leaderboard and Mentorship
+Top performers are not only recognized on our leaderboard but also play a crucial role in our community by providing mentorship to peers, fostering a supportive learning environment.
+
+### Dynamic Community Forum
+A platform for users to discuss modules, share personal insights, and seek advice, enhancing the learning experience through peer interaction.
+
+### Personalized Dashboard
+Users receive recommendations for new modules based on their activity and progress, coupled with visual tracking of daily streaks and rewards, making learning personalized and tracked.
+
+### AR Recommender
+By pointing their phone at financial documents or related items, users can see overlaid financial insights and tailored educational content, providing an immersive learning experience.
+
+### 24/7 Personalized Chatbot
+Our chatbot offers round-the-clock support, answering queries and guiding users through financial concepts, ensuring help is always at hand.
+
+## Deployment
+
+Fihub is deployed and can be accessed [here](https://fihub.vercel.app/).
+

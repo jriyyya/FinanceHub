@@ -10,7 +10,7 @@ export default function TeamPage() {
       >
         {navLinks.map((navLink, i) => (
           <>
-            <Link to={navLink.to} className="cursor-pointer">
+            <Link to={navLink.to}  target={`_newABC`} className="cursor-pointer">
               {navLink.title}
             </Link>
             {navLinks.length - 1 > i && (
@@ -28,7 +28,7 @@ export default function TeamPage() {
               key={i}
               className="w-[28%] mobile:w-[35%] bg-primary/10 rounded-xl flex flex-col items-center px-2 py-6 border border-primary/40"
             >
-              <img src={member.imgUrl} className="w-[8vw] rounded-full mobile:w-[16vw]" />
+              <img src={member.imgUrl} className="w-[8vw] rounded-full mobile:w-[16vw] aspect-square object-cover" />
               <h1 className="mt-4 text-lg font-bold">{member.name}</h1>
             </div>
           ))}
@@ -53,7 +53,7 @@ const team = [
   },
   {
     name: "Sakshi",
-    imgUrl: "https://avatars.githubusercontent.com/u/96080203?v=4",
+    imgUrl: "/sakshi.jpg",
   },
 ];
 
@@ -64,7 +64,7 @@ const navLinks = [
   },
   {
     title: "PPT",
-    to: "/",
+    to: "/Amex_hackathon.pdf",
   },
   {
     title: "Video",
